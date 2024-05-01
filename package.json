@@ -1,8 +1,8 @@
 {
-    "name": "com.nimlok.template",
+    "name": "com.nimlok.tweens",
     "version": "0.0.1",
-    "displayName": "template",
-    "description": "to be copied from",
+    "displayName": "Tweens",
+    "description": "Contains all tween functions",
     "unity": "2019.1",
     "unityRelease": "0b5",
     "documentationUrl": "https://example.com/",
@@ -10,12 +10,12 @@
     "licensesUrl": "https://example.com/licensing.html",
     "dependencies": {},
     "keywords": [
-        "Template",
+        "Tween",
         "Nimlok"
     ],
     "author": {
-        "name": "Your name",
-        "email": "nimlok Email",
+        "name": "Tween",
+        "email": "daniel.shapley@nimlok.co.uk",
         "url": "https://www.nimlok.co.uk"
     }
 }
