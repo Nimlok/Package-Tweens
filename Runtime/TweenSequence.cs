@@ -42,6 +42,18 @@ namespace Tweens
         {
             PlayTweenSequence(false, onComplete);
         }
+
+        public void PlaySequenceToggle(bool forward)
+        {
+            if (forward)
+            {
+                PlaySequenceForward();
+            }
+            else
+            {
+                PlaySequenceBackward();
+            }
+        }
         
         public void StopSequence()
         {
