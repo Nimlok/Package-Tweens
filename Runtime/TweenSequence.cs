@@ -17,12 +17,7 @@ namespace Tweens
         public UnityEvent OnSequenceComplete;
 
         public bool GetIsPlaying => tweenSequence.IsPlaying();
-
-        private void OnDisable()
-        {
-            tweenSequence?.Rewind();
-        }
-
+        
         private void Start()
         {
             if (playOnStart)
@@ -122,9 +117,9 @@ namespace Tweens
             tweenToSequence = baseTweens;
         }
 
-        private void AddActionOnComplete(bool Forward,Action onComplete)
+        private void AddActionOnComplete(bool forward, Action onComplete)
         {
-            if (Forward)
+            if (forward)
             {
                 tweenSequence.OnComplete(() => onComplete?.Invoke());
             }
