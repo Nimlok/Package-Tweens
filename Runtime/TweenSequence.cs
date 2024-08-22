@@ -4,7 +4,7 @@ using DG.Tweening.Core;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Tweens
+namespace Nimlok.Tweens
 {
     public class TweenSequence : MonoBehaviour
     {
