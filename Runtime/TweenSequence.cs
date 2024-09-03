@@ -10,10 +10,12 @@ namespace Nimlok.Tweens
     {
         [SerializeField] private bool playOnStart;
         [SerializeField] private bool startAllAtOnce;
+        [Space]
         [SerializeField] private ABSAnimationComponent[] tweenToSequence;
         
         private Sequence tweenSequence;
 
+        [Space]
         public UnityEvent OnSequenceComplete;
 
         public bool GetIsPlaying => tweenSequence.IsPlaying();
