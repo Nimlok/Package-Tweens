@@ -19,7 +19,12 @@ namespace Nimlok.Tweens
         public UnityEvent OnSequenceComplete;
 
         public bool GetIsPlaying => tweenSequence.IsPlaying();
-        
+
+        private void OnDisable()
+        {
+            tweenSequence.Rewind();
+        }
+
         private void Start()
         {
             if (playOnStart)
