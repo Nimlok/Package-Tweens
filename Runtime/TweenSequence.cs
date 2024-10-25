@@ -62,7 +62,12 @@ namespace Nimlok.Tweens
             //TODO: DS 19/04/24 Check to see whether need to restart the sequence after pausing
             tweenSequence.Pause();
         }
-        
+
+        public void ResetSequence()
+        {
+            tweenSequence.Rewind();
+        }
+
         private void PlayTweenSequence(bool forward, Action onComplete)
         {
             if (tweenSequence == null)
@@ -144,6 +149,7 @@ namespace Nimlok.Tweens
             }
             else
             {
+                tweenSequence.Restart();
                 tweenSequence.PlayBackwards();
             }
         }
