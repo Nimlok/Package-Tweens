@@ -149,7 +149,6 @@ namespace Nimlok.Tweens
             }
             else
             {
-                tweenSequence.Restart();
                 tweenSequence.PlayBackwards();
             }
         }
